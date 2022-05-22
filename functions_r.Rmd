@@ -130,6 +130,21 @@ Since we have named the arguments in the function call, the order normally does 
 ```{r}
 rescale( only_translate = TRUE, x = 1:4)
 ```
+In case of only two arguments being fed into a function, provided one is named, the other may not necessarily be named too. For example:
+
+```{r}
+rescale(x = 1:4, TRUE)
+rescale(TRUE, x = 1:4)
+rescale(1:4, only_translate = T)
+rescale(only_translate = T, 1:4)
+```
+
+In addition to the above, it is possible just to give few unique initials of the name of the argument and the function will run successfully. For example, in our rescale function, the arguments start with x and o, so only stating the first name character is enough as follows:
+
+```{r}
+rescale(1:4, o = T)
+rescale(o = T, 1:4)
+```
 
 
 # References
