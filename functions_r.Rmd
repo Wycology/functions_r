@@ -139,11 +139,34 @@ rescale(1:4, only_translate = T)
 rescale(only_translate = T, 1:4)
 ```
 
-In addition to the above, it is possible just to give few unique initials of the name of the argument and the function will run successfully. For example, in our rescale function, the arguments start with x and o, so only stating the first name character is enough as follows:
+In addition to the above, it is possible just to give few unique initials of the name of the argument and the function will run successfully. For example, in our `rescale` function, the arguments start with x and o, so only stating the first name character is enough as follows:
 
 ```{r}
 rescale(1:4, o = T)
 rescale(o = T, 1:4)
+```
+
+The method above is suited for short codes in R and should not be used when writing programs or packages as the users may be confused. Avoid it.
+
+# Default parameters
+
+It is possible to give a function default parameter when defining it. This can be changed by the user when giving appropriate parameter to the argument to show results otherwise.
+
+```{r}
+rescale <- function(x, only_translate = FALSE){
+  m <- mean(x)
+  translated <- x - m
+  if(only_translate) return(translated)
+  s <- sd(x)
+  translated / s
+}
+```
+
+
+Now, since the default value of only_translate has been given, we can only supply the vector x and nothing for only_translate and the FALSE parameter for that argument will be run under the hood.
+
+```{r}
+rescale(1:4) # This runs with only_translate being taken as FALSE by default.
 ```
 
 
