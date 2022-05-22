@@ -1,0 +1,76 @@
+---
+title: "<center>**Functional Programming in `R`**</center>"
+author: "<center>Wyclife Agumba Oluoch</center>"
+date: '<center>`r Sys.time()`</center>'
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Functions in `R`
+
+Almost every time one needs to use R, a function must be involved. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function.
+
+Here I demonstrate a function which is taking a number and squaring it:
+
+```{r}
+square <- function(a) a**2
+square(3)
+```
+
+The same can be writted using the curly braces as follows:
+
+```{r}
+square <- function(b){
+  b**2
+}
+square(4)
+```
+
+The same can also be written as:
+
+```{r}
+square <- function(b){
+  product <- b**2
+  return(product)
+}
+square(8)
+```
+
+The same can also be presented as:
+
+```{r}
+square <- function(m){
+  product <- m**2
+  print(product)
+}
+square(5)
+```
+
+This is also performing the same work:
+
+```{r}
+square <- function(k){
+  product <- k**2
+  (product)
+}
+square(9)
+```
+
+Now I want the formula to return half the square root the number:
+
+```{r}
+square_root <- function(b){
+  product <- b^0.5
+  return(product/2)
+}
+square_root(9)
+```
+
+
+
+# References
