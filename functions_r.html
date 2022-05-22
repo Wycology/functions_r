@@ -368,7 +368,7 @@ pre code {
 Wyclife Agumba Oluoch
 </center></h4>
 <h4 class="date"><center>
-2022-05-22 20:21:56
+2022-05-22 21:08:08
 </center></h4>
 
 </div>
@@ -419,6 +419,57 @@ square(9)</code></pre>
 }
 square_root(9)</code></pre>
 <pre><code>## [1] 1.5</code></pre>
+<p>The function can also take a list and return their outputs
+accordingly”</p>
+<pre class="r"><code>square(1:10)</code></pre>
+<pre><code>##  [1]   1   4   9  16  25  36  49  64  81 100</code></pre>
+<p>or even</p>
+<pre class="r"><code>square_root(c(26, 1:15, 158))</code></pre>
+<pre><code>##  [1] 2.5495098 0.5000000 0.7071068 0.8660254 1.0000000 1.1180340 1.2247449
+##  [8] 1.3228757 1.4142136 1.5000000 1.5811388 1.6583124 1.7320508 1.8027756
+## [15] 1.8708287 1.9364917 6.2849025</code></pre>
+<p>We can even dig into a list and find the result we want.</p>
+<pre class="r"><code>m &lt;- list(12, 18, 345)
+square_root(m[[3]])</code></pre>
+<pre><code>## [1] 9.287088</code></pre>
+</div>
+<div id="rescale-function" class="section level1">
+<h1>Rescale function</h1>
+<p>Here we are going to create a function that will take a vector,
+calculate mean, calculate standard deviation, then divide deviations of
+values from mean by standard deviation</p>
+<pre class="r"><code>rescale &lt;- function(x){
+  m &lt;- mean(x)
+  s &lt;- sd(x)
+  (x - m) / s
+}
+rescale(c(52, 58, 46, 99))</code></pre>
+<pre><code>## [1] -0.4894771 -0.2395314 -0.7394229  1.4684314</code></pre>
+<pre class="r"><code>rescale &lt;- function(x, only_translate){
+  m &lt;- mean(x)
+  translated &lt;- x - m
+  if (only_translate) return(translated)
+  s &lt;- sd(x)
+  translated / s
+}
+
+rescale(x = 1:4, only_translate = TRUE)</code></pre>
+<pre><code>## [1] -1.5 -0.5  0.5  1.5</code></pre>
+<pre class="r"><code>rescale &lt;- function(x, only_translate){
+  m &lt;- mean(x)
+  translated &lt;- x - m
+  if (only_translate) return(translated)
+  s &lt;- sd(x)
+  translated / s
+}
+
+rescale(x = 1:4, only_translate = FALSE)</code></pre>
+<pre><code>## [1] -1.1618950 -0.3872983  0.3872983  1.1618950</code></pre>
+<p>Since we have named the arguments in the function call, the order
+normally does not matter. That is we can start with the only_translate
+argument before including the x argument as follows:</p>
+<pre class="r"><code>rescale( only_translate = TRUE, x = 1:4)</code></pre>
+<pre><code>## [1] -1.5 -0.5  0.5  1.5</code></pre>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>

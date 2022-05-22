@@ -81,6 +81,55 @@ or even
 ```{r}
 square_root(c(26, 1:15, 158))
 ```
+We can even dig into a list and find the result we want.
+
+```{r}
+m <- list(12, 18, 345)
+square_root(m[[3]])
+```
+
+# Rescale function
+
+Here we are going to create a function that will take a vector, calculate mean, calculate standard deviation, then divide deviations of values from mean by standard deviation
+
+```{r}
+rescale <- function(x){
+  m <- mean(x)
+  s <- sd(x)
+  (x - m) / s
+}
+rescale(c(52, 58, 46, 99))
+```
+
+```{r}
+rescale <- function(x, only_translate){
+  m <- mean(x)
+  translated <- x - m
+  if (only_translate) return(translated)
+  s <- sd(x)
+  translated / s
+}
+
+rescale(x = 1:4, only_translate = TRUE)
+```
+
+```{r}
+rescale <- function(x, only_translate){
+  m <- mean(x)
+  translated <- x - m
+  if (only_translate) return(translated)
+  s <- sd(x)
+  translated / s
+}
+
+rescale(x = 1:4, only_translate = FALSE)
+```
+
+Since we have named the arguments in the function call, the order normally does not matter. That is we can start with the only_translate argument before including the x argument as follows:
+
+```{r}
+rescale( only_translate = TRUE, x = 1:4)
+```
 
 
 # References
