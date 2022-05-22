@@ -2,7 +2,12 @@
 title: "<center>**Functional Programming in `R`**</center>"
 author: "<center>Wyclife Agumba Oluoch</center>"
 date: '<center>`r Sys.time()`</center>'
-output: html_document
+output: 
+    html_document:
+      toc: true
+      toc_depth: 2
+      toc_float: true
+      theme: cerulean
 editor_options: 
   chunk_output_type: inline
 ---
@@ -22,7 +27,7 @@ square <- function(a) a**2
 square(3)
 ```
 
-The same can be writted using the curly braces as follows:
+The same can be written using the curly braces as follows:
 
 ```{r}
 square <- function(b){
