@@ -196,9 +196,16 @@ The parameter ... takes any named parameter at all. However, if it is not includ
 
 ```{r}
 some_function <- function(x) x
-other_function <- function
-some_function(12)
+other_function <- function(x, ...) x
+# some_function(1:4, foo = "bar") # This does not run because there was no allowance.
+other_function(1:4, foo = "bar")
 
+```
+
+```{r}
+f <- function(...) list(...)
+g <- function(x, y, ...) f(...)
+g(x = 1, y = 2, z = 3, w = 4)
 ```
 
 
