@@ -174,7 +174,7 @@ Now, since the default value of only_translate has been given, we can only suppl
 rescale(1:4) # This runs with only_translate being taken as FALSE by default.
 ```
 
-# Gobble up everything else arumet
+# Gobble up everything else argument
 
 There is the ... variable in R which can be used in a function. It is normally applicable when calling a function within a function and you wish to use all functions from the other function.
 
@@ -212,6 +212,5 @@ f <- function(...) list(...)
 g <- function(x, y, ...) f(...)
 g(x = 1, y = 2, z = 3, w = 4)
 ```
-
 
 # References
