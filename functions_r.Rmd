@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Functions in `R`
 
-Genevery time one needs to use `R`, a function must be involved. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function.
+Gevery time one needs to use `R`, a function must be involved. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function.
 
 Here I show a function which is taking a number and squaring it:
 
