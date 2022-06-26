@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Every time one needs to use `R`, a function *must* be involved. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function.
 
-Here I showa function which is taking a number and squaring it:
+Here I show function which is taking a number and squaring it:
 
 ```{r}
 square <- function(a) a**2
