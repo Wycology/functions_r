@@ -39,8 +39,8 @@ square(4)
 The same can also be written as:
 
 ```{r}
-square <- function(b){
-  product <- b**2
+square <- function(c){
+  product <- c**2
   return(product)
 }
 square(8)
@@ -49,8 +49,8 @@ square(8)
 The same can also be presented as:
 
 ```{r}
-square <- function(m){
-  product <- m**2
+square <- function(d){
+  product <- d**2
   print(product)
 }
 square(5)
@@ -59,14 +59,24 @@ square(5)
 This is also performing the same work:
 
 ```{r}
-square <- function(k){
-  product <- k**2
+square <- function(e){
+  product <- e**2
   (product)
 }
 square(9)
 ```
 
-Now I want the formula to return half the square root the number:
+The same can be returned using the show:
+
+```{r}
+square <- function(f){
+  product <- f**2
+  show(product)
+}
+square(9)
+```
+
+Now I want the formula to return half the square root of the number:
 
 ```{r}
 square_root <- function(b){
@@ -76,7 +86,7 @@ square_root <- function(b){
 square_root(9)
 ```
 
-The function can also take a list and return their outputs accordingly"
+The function can also take a list and return their outputs accordingly.
 
 ```{r}
 square(1:10)
