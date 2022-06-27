@@ -1515,7 +1515,7 @@ div.tocify {
 Wyclife Agumba Oluoch
 </center></h4>
 <h4 class="date"><center>
-2022-06-19 22:09:21
+2022-06-26 23:45:43
 </center></h4>
 
 </div>
@@ -1523,11 +1523,11 @@ Wyclife Agumba Oluoch
 
 <div id="functions-in-r" class="section level1">
 <h1>Functions in <code>R</code></h1>
-<p>Generally, every time one needs to use R, a function must be
-involved. It is not enough to use a function, it is enough to understand
-what the function does and even better still tweak it to suit your needs
-or even develop your own function.</p>
-<p>Here I show a function which is taking a number and squaring it:</p>
+<p>Every time one needs to use <code>R</code>, a function <em>must</em>
+be involved. It is not enough to use a function, it is enough to
+understand what the function does and even better still tweak it to suit
+your needs or even develop your own function.</p>
+<p>Here is a function that is taking a number and squaring it:</p>
 <pre class="r"><code>square &lt;- function(a) a**2
 square(3)</code></pre>
 <pre><code>## [1] 9</code></pre>
@@ -1538,27 +1538,35 @@ square(3)</code></pre>
 square(4)</code></pre>
 <pre><code>## [1] 16</code></pre>
 <p>The same can also be written as:</p>
-<pre class="r"><code>square &lt;- function(b){
-  product &lt;- b**2
+<pre class="r"><code>square &lt;- function(c){
+  product &lt;- c**2
   return(product)
 }
 square(8)</code></pre>
 <pre><code>## [1] 64</code></pre>
 <p>The same can also be presented as:</p>
-<pre class="r"><code>square &lt;- function(m){
-  product &lt;- m**2
+<pre class="r"><code>square &lt;- function(d){
+  product &lt;- d**2
   print(product)
 }
 square(5)</code></pre>
 <pre><code>## [1] 25</code></pre>
 <p>This is also performing the same work:</p>
-<pre class="r"><code>square &lt;- function(k){
-  product &lt;- k**2
+<pre class="r"><code>square &lt;- function(e){
+  product &lt;- e**2
   (product)
 }
 square(9)</code></pre>
 <pre><code>## [1] 81</code></pre>
-<p>Now I want the formula to return half the square root the number:</p>
+<p>The same can be returned using the show:</p>
+<pre class="r"><code>square &lt;- function(f){
+  product &lt;- f**2
+  show(product)
+}
+square(9)</code></pre>
+<pre><code>## [1] 81</code></pre>
+<p>Now I want the formula to return half the square root of the
+number:</p>
 <pre class="r"><code>square_root &lt;- function(b){
   product &lt;- b^0.5
   return(product/2)
@@ -1566,7 +1574,7 @@ square(9)</code></pre>
 square_root(9)</code></pre>
 <pre><code>## [1] 1.5</code></pre>
 <p>The function can also take a list and return their outputs
-accordingly”</p>
+accordingly.</p>
 <pre class="r"><code>square(1:10)</code></pre>
 <pre><code>##  [1]   1   4   9  16  25  36  49  64  81 100</code></pre>
 <p>or even</p>
