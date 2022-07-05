@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Functions in `R`
 
-Every time one uses `R`, a function *must* be inv. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function(s).
+Every time one uses `R`, a function *must* be in. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function(s).
 
 Here is a function that takes a number and squares it:
 
