@@ -56,7 +56,7 @@ square <- function(d){
 square(5)
 ```
 
-This is also performing the same work:
+This is als performing the same work:
 
 ```{r}
 square <- function(e){
