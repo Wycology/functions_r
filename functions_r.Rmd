@@ -46,7 +46,7 @@ square <- function(c){
 square(8)
 ```
 
-The same can also be presented as:
+The same can alsobe presented as:
 
 ```{r}
 square <- function(d){
