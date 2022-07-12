@@ -16,7 +16,7 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Function in `R`
+# Functiona in `R`
 
 Every time one uses `R`, a function *must* be used. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function(s).
 
