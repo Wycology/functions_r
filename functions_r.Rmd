@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Functional programing in `R`
 
-Vir very time one uses `R`, a function *must* be used. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function(s).
+Virt very time one uses `R`, a function *must* be used. It is not enough to use a function, it is enough to understand what the function does and even better still tweak it to suit your needs or even develop your own function(s).
 
 Here is a function that takes a number and squares it:
 
