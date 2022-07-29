@@ -27,7 +27,7 @@ square <- function(a) a**2
 square(3)
 ```
 
-The same can be written using th curly braces as follows:
+The same can be written using t curly braces as follows:
 
 ```{r}
 square <- function(b){
