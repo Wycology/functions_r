@@ -36,7 +36,7 @@ square <- function(b){
 square(4)
 ```
 
-The same can also be written as follo:
+The same can also be written as follow:
 
 ```{r}
 square <- function(c){
