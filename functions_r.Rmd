@@ -153,7 +153,7 @@ rescale(TRUE, x = 1:4)
 rescale(1:4, only_translate = T)
 rescale(only_translate = T, 1:4)
 ```
-It is possible just to give few unique initials of the name of the argument and the function will run successfully. For example, in our `rescale` function, the arguments start with x and o, so only stating the first name character is enough as follows:
+It is possible jus to give few unique initials of the name of the argument and the function will run successfully. For example, in our `rescale` function, the arguments start with x and o, so only stating the first name character is enough as follows:
 
 ```{r}
 rescale(1:4, o = T)
