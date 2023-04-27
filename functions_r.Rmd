@@ -235,7 +235,7 @@ compare_rasters <- function(x) {
 }
 ```
  
-This function will create a binary raster layer
+This function will create a binary raster layer which is having values of 1 
 
 
 
