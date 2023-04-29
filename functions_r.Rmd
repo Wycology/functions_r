@@ -66,7 +66,7 @@ square <- function(e){
 square(9)
 ```
 
-The same can be returned using the code show:
+The same can be returned using the code t:
 
 ```{r}
 square <- function(f){
