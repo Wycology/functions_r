@@ -242,6 +242,26 @@ One can decide and say that if 7 out of the 13 models successfully run are showi
 
 # for loop versus map loop
 
+Here I check the difference in 
+
+```{r}
+volumes <- rnorm(1000000)
+
+for_loop <- vector()
+
+for (k in 1:20) { 
+  for_loop[k] <- system.time(
+for (i in 1:length(volumes)) {
+  2.3 * volumes[i]^9
+}
+)
+}
+
+map_loop <- vector()
+for (j in 1:20){
+map_loop[j] <- system.time(map_vec(volumes, \(x) 2.3 * x^9))
+}
+```
 
 
 
