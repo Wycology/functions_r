@@ -240,6 +240,8 @@ One can decide and say that if 7 out of the 13 models successfully run are showi
 
 
 
+# for loop versus map loop
+
 
 
 
