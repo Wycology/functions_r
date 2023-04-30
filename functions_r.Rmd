@@ -264,6 +264,17 @@ map_loop[j] <- system.time(map_vec(volumes, \(x) 2.3 * x^9))
 }
 ```
 
+```{r}
+data.frame(for_loop = for_loop, map_loop = map_loop) %>% 
+  gather(key = "key", value = "value") %>% 
+  ggplot(aes(key, value)) +
+  geom_boxplot() +
+  labs(x = "Type of loop",
+       y = "Time in seconds") +
+  theme(text = element_text(size = 14, face = "bold", colour = "black")) +
+  theme(axis.text = element_text(size = 14, face = "bold", colour = "black"))
+```
+
 
 
 
