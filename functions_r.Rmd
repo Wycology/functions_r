@@ -242,7 +242,7 @@ One can decide and say that if 7 out of the 13 models successfully run are showi
 
 # for loop versus map loop
 
-Here I check the difference in performance between a for loop in base Rand 
+Here I check the difference in performance between a for loop in base R and the map loop from 
 
 ```{r}
 volumes <- rnorm(1000000)
