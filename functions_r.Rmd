@@ -245,6 +245,7 @@ One can decide and say that if 7 out of the 13 models successfully run are showi
 Here I check the difference in performance between a for loop in base R and the map loop from purrr.
 
 ```{r}
+library(tidyverse)
 volumes <- rnorm(1000000)
 
 for_loop <- vector()
