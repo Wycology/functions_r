@@ -43,7 +43,7 @@ square <- function(c){
   product <- c**2
   return(product)
 }
-square(8)
+square()
 ```
 
 The same can be presented as:
