@@ -33,7 +33,7 @@ It can be written using curly braces as follows:
 square <- function(b){
   b**2
 }
-square()
+square(3)
 ```
 
 The same can also be written as follows:
