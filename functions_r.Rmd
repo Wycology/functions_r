@@ -96,7 +96,7 @@ or even
 ```{r}
 square_root(c(26, 1:15, 158))
 ```
-We can dig into a list  and find the result we want.
+We can dig into a list o and find the result we want.
 
 ```{r}
 m <- list(12, 18, 345)
