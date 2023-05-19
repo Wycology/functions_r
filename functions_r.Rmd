@@ -117,7 +117,7 @@ rescale <- function(x){
   s <- sd(x)
   (x - m) / s
 }
-rescale(c(52, 58, 46, 99))
+rescale(c(-52, 58, 46, 99))
 ```
 
 ```{r}
