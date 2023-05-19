@@ -86,6 +86,8 @@ square_root <- function(b){
 square_root(9)
 ```
 
+
+
 The function can also take a list and return their outputs accordingly.
 
 ```{r}
