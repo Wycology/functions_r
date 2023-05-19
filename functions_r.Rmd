@@ -129,7 +129,7 @@ rescale <- function(x, only_translate){
   translated / s
 }
 
-rescale(x = 1:4, only_translate = TRUE)
+rescale(x = 1:6, only_translate = TRUE)
 ```
 
 ```{r}
