@@ -93,12 +93,12 @@ square_root
 The function can also take a list and return their outputs accordingly.
 
 ```{r}
-square(1:10)
+square(-10:10)
 ```
 or even
 
 ```{r}
-square_root(c(26, 1:15, 158))
+square_root(c(-26, 1:15, 158))
 ```
 We can dig into a list object and find the result we want.
 
