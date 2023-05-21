@@ -189,7 +189,7 @@ rescale(1:4) # This runs with only_translate being taken as FALSE by default.
 
 # Gobble up everything else argument
 
-There is the `...` variable in `R` th can be used in a function. It is normally applicable when calling a function within a function and you wish to use all functions from the other function.
+There is the `...` variable in `R` tha can be used in a function. It is normally applicable when calling a function within a function and you wish to use all functions from the other function.
 
 ```{r}
 rescale <- function(x, ...){
