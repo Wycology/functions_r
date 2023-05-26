@@ -240,7 +240,7 @@ compare_rasters <- function(x) {
 ```
  
 This function will create a binary raster layer which is having pixel values of 1 in case at least 7 of the feeding rasters from the stack have pixel value of not less than 0.5. This is an important function es when considering the aggregation of raster layers from the output of predict function in `sdm` package.
-One can decide and say that if `r 3 + 4` out of the `r sqrt(169)` models successfully run are showing suitability of 0.7 then the pixel is considered suitable and not otherwise.
+One can decide and say that if `r 3 + 4` out of the `r sqrt(169)` models successfully run are showing suitability of `r `0.7 then the pixel is considered suitable and not otherwise.
 
 # for loop versus map loop
 
