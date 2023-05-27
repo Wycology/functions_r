@@ -1,7 +1,7 @@
 ---
-title: "<center>**Functional Programming in `R`**</center>"
-author: "<center>Wyclife Agumba Oluoch</center>"
-date: '<center>`r Sys.time()`</center>'
+title: "**Functional Programming in `R`**"
+author: "Wyclife Agumba Oluoch"
+date: '`r Sys.time()`'
 output: 
     html_document:
       toc: true
