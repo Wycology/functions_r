@@ -90,7 +90,7 @@ square_root(9)
 square_root
 ```
 
-The function can also take a l and return their outputs accordingly.
+The function can also take a  and return their outputs accordingly.
 
 ```{r}
 square(-10:10)
