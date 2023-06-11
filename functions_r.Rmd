@@ -39,7 +39,7 @@ square(3)
 The same can also be written as follows:
 
 ```{r}
-square <- function(c){
+square <- function(c){ 
   product <- c**2
   return(product)
 }
