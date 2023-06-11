@@ -30,7 +30,7 @@ square(3)
 It can be written using curly braces as follows:
 
 ```{r}
-square <- function(b){ # Create the fun
+square <- function(b){ # Create the func
   b**2
 }
 square(3)
