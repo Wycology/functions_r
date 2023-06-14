@@ -144,7 +144,7 @@ rescale <- function(x, only_translate){
 rescale(x = 1:4, only_translate = FALSE)
 ```
 
-Since we have alr named the arguments in the function call, the order normally does not matter. That is we could start with the only_translate argument before including the x argument as below:
+Since we have alre named the arguments in the function call, the order normally does not matter. That is we could start with the only_translate argument before including the x argument as below:
 
 ```{r}
 rescale(only_translate = TRUE, x = 1:4)
