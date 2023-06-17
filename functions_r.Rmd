@@ -109,7 +109,7 @@ square_root(m[[2]])
 
 # Rescale function
 
-Here we  to create a function that will take a vector, calculate mean, calculate standard deviation, then divide deviations of values from mean by standard deviation
+Here we w to create a function that will take a vector, calculate mean, calculate standard deviation, then divide deviations of values from mean by standard deviation
 
 ```{r}
 rescale <- function(x){
