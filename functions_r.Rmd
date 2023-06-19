@@ -198,7 +198,7 @@ rescale <- function(x, ...){
   (x - m) / s
 }
 
-rescale(1:4)
+rescale(1:4) # 
 ```
 
 ```{r}
