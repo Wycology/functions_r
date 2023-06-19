@@ -276,5 +276,4 @@ data.frame(for_loop = for_loop, map_loop = map_loop) %>%
 ```
 It is clear from the above plot that the for loop spent less time iterate through the 1,000,000 length vector.
 
-
 # References
