@@ -274,6 +274,6 @@ data.frame(for_loop = for_loop, map_loop = map_loop) %>%
   theme(text = element_text(size = 14, face = "bold", colour = "black")) +
   theme(axis.text = element_text(size = 14, face = "bold", colour = "black"))
 ```
-It is clear from the above plot that the for loop s less time iterate through the 1,000,000 length vector.
+It is clear from the above plot that the for loop  less time iterate through the 1,000,000 length vector.
 
 # References
