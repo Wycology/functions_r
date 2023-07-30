@@ -30,7 +30,7 @@ square(3)
 It can be written using curly braces as follows:
 
 ```{r}
-square <- function(b){ # Create the function name
+square <- function(b){ # Create the function name, called squa
   b**2
 }
 square(3)
@@ -56,7 +56,7 @@ square <- function(d){
 square(5)
 ```
 
-This is performing the similar task:
+This is performing a similar task:
 
 ```{r}
 square <- function(e){
@@ -90,7 +90,7 @@ square_root(9)
 square_root
 ```
 
-The function can also take a vector and return their outputs accordingly.
+The function can also take a vector and return its outputs accordingly.
 
 ```{r}
 square(-10:10)
@@ -111,7 +111,7 @@ square_root(m[[2]])
 
 # rescale function
 
-Here we wil to create a function that will take a vector, calculate mean, calculate standard deviation, then divide deviations of values from mean by standard deviation
+Here we will create a function that will take a vector, calculate the mean, calculate the standard deviation, then divide deviations of values from the mean by the standard deviation
 
 ```{r}
 rescale <- function(x){
