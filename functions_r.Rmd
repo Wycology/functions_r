@@ -175,7 +175,7 @@ The method above is suited for short codes in R and should not be used when writ
 
 # Default parameters
 
-It is possible to give a function default parameter when defining it. This can be changed by the user when giving appropriate parameter to the argument to show results otherwise.
+It is apossible to give a function default parameter when defining it. This can be changed by the user when giving appropriate parameter to the argument to show results otherwise.
 
 ```{r}
 rescale <- function(x, only_translate = FALSE){
