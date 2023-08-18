@@ -251,7 +251,12 @@ This function will create a binary raster layer which has pixel values of 1 in c
 # Tuning maxent in sdm
 
 ```{r}
-sdm(species ~., )
+sdm::sdm(species ~., 
+         data = d, 
+         methods = "maxent",
+         test.percent = 30,
+         modelSettings = list(maxent, 
+                              list(feat = c("linear", "quadratic"))))
 ```
 
 
