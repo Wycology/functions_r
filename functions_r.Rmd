@@ -297,4 +297,15 @@ data.frame(for_loop = for_loop, map_loop = map_loop) %>%
 
 It is clear from the above plot that the for loop took less time iterating through the 1,000,000 length vector.
 
+```{r}
+
+library(lubridate)
+
+```
+
+
+
+
+
+
 # References
