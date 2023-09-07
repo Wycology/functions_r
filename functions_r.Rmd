@@ -305,6 +305,10 @@ vec <- c("Today is 7th Sept 2023")
 
 # The task is to get the date information and make it a date object.
 
+pattern <- "\\d{1,2}th \\[A-Za-z]+ \\d{4}"
+
+date_object <- str_extract(vec, pattern)
+
 
 
 ```
