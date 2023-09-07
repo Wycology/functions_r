@@ -309,7 +309,13 @@ pattern <- "\\d{1,2}th \\[A-Za-z]+ \\d{4}"
 
 date_object <- str_extract(vec, pattern)
 
+date_object <- str_replace(date_object, "th", "")
 
+date_object <- str_replace(date_object, "Sept", "9")
+
+date_object <- dmy(date_object)
+
+print(date_object)
 
 ```
 
