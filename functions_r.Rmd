@@ -301,7 +301,7 @@ It is clear from the above plot that the for loop took less time iterating throu
 library(stringr)
 library(lubridate)
 
-
+vec <- c("Today is 7th Sept 2023")
 
 ```
 
