@@ -297,4 +297,31 @@ data.frame(for_loop = for_loop, map_loop = map_loop) %>%
 
 It is clear from the above plot that the for loop took less time iterating through the 1,000,000 length vector.
 
+```{r}
+library(stringr)
+library(lubridate)
+
+vec <- c("Today is 7th Sept 2023")
+
+# The task is to get the date information and make it a date object.
+
+pattern <- "\\d{1,2}th \\[A-Za-z]+ \\d{4}"
+
+date_object <- str_extract(vec, pattern)
+
+date_object <- str_replace(date_object, "th", "")
+
+date_object <- str_replace(date_object, "Sept", "9")
+
+date_object <- dmy(date_object)
+
+print(date_object)
+
+```
+
+
+
+
+
+
 # References
