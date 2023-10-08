@@ -83,7 +83,7 @@ Now I want the formula to return half the square root of the number provided:
 
 ```{r}
 square_root <- function(b){
-  product <- b^0.5 # Square root of a number is the number raised topower half
+  product <- b^0.5 # Square root of a number is the number raised to power half
   return(product/2)
 }
 square_root(9)
