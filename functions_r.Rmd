@@ -30,7 +30,7 @@ square <- function(a) a**2
 square(3)
 ```
 
-T can be written using curly braces as follows:
+Th can be written using curly braces as follows:
 
 ```{r}
 square <- function(b){ # Create the function name, called square
