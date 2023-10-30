@@ -23,7 +23,7 @@ Mos of the work here comes from the works of [@wickham2023]. Which should be pre
 
 Virtually every time one uses `R`, a function is involved. It is not enough to use a function, it is worth understanding what the function does and even better still to tweak the function to suit your needs or even develop your own function(s).
 
-Here is a function that takes a number and retsquares it:
+Here is a function that takes a number and retusquares it:
 
 ```{r}
 square <- function(a) a**2
