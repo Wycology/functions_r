@@ -301,7 +301,7 @@ It is clear from the above plot that the for loop took less time iterating throu
 library(stringr)
 library(lubridate)
 
-vec <- c("Today is 2th Sept 2023")
+vec <- c("Today is 23th Sept 2023")
 
 # The task is to get the date information and make it a date object.
 
