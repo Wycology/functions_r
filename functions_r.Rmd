@@ -264,7 +264,7 @@ sdm::sdm(species ~.,
 
 # for loop versus map loop
 
-Here I check the difference in performance between a for loop in base R and the map loop from purrr.
+Here I check the difference in performance between a for loop in base R and the map loo from purrr.
 
 ```{r}
 library(tidyverse)
