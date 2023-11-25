@@ -295,7 +295,7 @@ data.frame(for_loop = for_loop, map_loop = map_loop) %>%
   theme(axis.text = element_text(size = 14, face = "bold", colour = "black"))
 ```
 
-It is clear from the above plot that the for loop took less time iterating through the 1,00 length vector.
+It is clear from the above plot that the for loop took less time iterating through the 1,0 length vector.
 
 ```{r}
 library(stringr)
